@@ -1,7 +1,5 @@
 window.addEventListener('scroll', onScroll)
 
-onScroll()
-
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
@@ -10,7 +8,6 @@ function onScroll() {
   activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
-
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -34,7 +31,8 @@ function activateMenuAtCurrentSection(section) {
   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
   //limites da seção
-  const sectionBoundaries = sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetline
+  const sectionBoundaries =
+    sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetline
 
   //pega o id do atributo "nome da seção"
   const sectionId = section.getAttribute('id')
@@ -46,10 +44,10 @@ function activateMenuAtCurrentSection(section) {
   if (sectionBoundaries) {
     menuElement.classList.add('active')
   }
-
 }
 
 function showNavOnScroll() {
+  const navigation = document.querySelector('nav')
   if (scrollY > 0) {
     // scrollY, o quanto o socroll está sendo rodado.
     navigation.classList.add('scroll')
@@ -59,6 +57,7 @@ function showNavOnScroll() {
 }
 
 function showBackToTopButtonOnScroll() {
+  const backToTopButton = document.querySelector('#backToTopButton')
   if (scrollY > 550) {
     // scrollY, o quanto o socroll está sendo rodado.
     backToTopButton.classList.add('show')
@@ -90,4 +89,5 @@ ScrollReveal({
   #about .content,
   #contact,
   #contact header, 
-  #contact .content`)
+  #contact .content,
+  footer`)

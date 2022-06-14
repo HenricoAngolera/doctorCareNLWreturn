@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctorCare</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <nav id="navigation">
+    <nav id="navigation" >
       <div class="wrapper">
         <a class="logo" href="#home">
           <svg
@@ -71,13 +71,17 @@
             <li>
               <a onclick="closeMenu()" href="#home">Início</a>
             </li>
-            <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li>
+              <a onclick="closeMenu()" href="#services">Serviços</a>
+            </li>
+            <li>
+              <a onclick="closeMenu()" href="#about">Sobre</a>
+            </li>
           </ul>
 
-          <a class="button" onclick="closeMenu()" href="#contact"
-            >Agende sua Consulta</a
-          >
+          <a class="button" onclick="closeMenu()" href="#contact">
+            Agende sua Consulta
+          </a>
 
           <ul class="social-links">
             <li>
@@ -471,6 +475,8 @@
       </div>
     </section>
 
+    
+
     <section id="contact">
       <div class="wrapper">
         <div class="col-a">
@@ -534,7 +540,7 @@
 
             <a
               class="button"
-              href="https://wa.me/5511987654321"
+              href="https://wa.me/5555984048006"
               target="_blank"
             >
               <!--Abre uma conversa de whatsapp-->
@@ -550,7 +556,6 @@
                   fill="white"
                 />
               </svg>
-
               Agende sua consulta
             </a>
           </div>
@@ -735,9 +740,8 @@
         />
       </svg>
     </a>
-
-    <!--ScrollReaveal Lib-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./main.js"></script>
   </body>
+  <!--ScrollReaveal Lib-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
 </html>
